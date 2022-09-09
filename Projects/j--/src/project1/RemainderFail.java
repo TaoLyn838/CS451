@@ -1,5 +1,3 @@
-package project1;
-
 import java.lang.System;
 
 public class RemainderFail {

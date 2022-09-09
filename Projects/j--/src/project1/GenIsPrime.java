@@ -64,8 +64,6 @@ public class GenIsPrime {
         e.addMemberAccessInstruction(INVOKESTATIC, "IsPrime", "isPrime", "(I)Z");
         e.addNoArgInstruction(ISTORE_2);
 
-
-
         e.write();
     }
 }

@@ -1,5 +1,3 @@
-package project1;
-
 import java.lang.Integer;
 import java.lang.System;
 
