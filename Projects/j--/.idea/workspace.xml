@@ -2,41 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloWorld.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/.idea/libraries/project1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/libraries/project1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/ALeftShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ALeftShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/ALeftShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ALeftShiftFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/ARightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ARightShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/ARightShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ARightShiftFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseAnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseAndFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseAndFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseExclusiveOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseExclusiveOr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseExclusiveOrFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseExclusiveOrFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseInclusiveOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseInclusiveOr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseInclusiveOrFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseInclusiveOrFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseNot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseNot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/BitwiseNotFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseNotFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/DivisionFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/DivisionFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/GenIsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/GenIsPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/LRightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/LRightShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/LRightShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/LRightShiftFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/Ops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Ops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/Remainder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Remainder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/RemainderFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/RemainderFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/UnaryPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/UnaryPlus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/UnaryPlusFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/UnaryPlusFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/project1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/project1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/project1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/clemitter/GenFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/clemitter/GenFactorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project1/GenIsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/GenIsPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vdocuments.net_introduction-to-compiler-construction-in-a-java.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +215,8 @@
       <workItem from="1662658331837" duration="48000" />
       <workItem from="1662658491090" duration="5632000" />
       <workItem from="1662678241819" duration="171000" />
-      <workItem from="1662678595959" duration="1444000" />
+      <workItem from="1662678595959" duration="1904000" />
+      <workItem from="1662685613631" duration="3979000" />
     </task>
     <servers />
   </component>
