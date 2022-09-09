@@ -2,31 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../project1/ALeftShift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/ALeftShiftFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/ARightShift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/ARightShiftFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseAnd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseAndFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseExclusiveOr.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseExclusiveOrFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseInclusiveOr.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseInclusiveOrFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseNot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/BitwiseNotFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/Division.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/DivisionFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/GenIsPrime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/LRightShift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/LRightShiftFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/Ops.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/Remainder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/RemainderFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/UnaryPlus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/UnaryPlusFail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/project1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/project1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project1/report.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelloWorld.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/.idea/libraries/project1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/libraries/project1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/ALeftShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ALeftShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/ALeftShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ALeftShiftFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/ARightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ARightShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/ARightShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/ARightShiftFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseAnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseAndFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseAndFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseExclusiveOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseExclusiveOr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseExclusiveOrFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseExclusiveOrFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseInclusiveOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseInclusiveOr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseInclusiveOrFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseInclusiveOrFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseNot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseNot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/BitwiseNotFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/BitwiseNotFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/DivisionFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/DivisionFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/GenIsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/GenIsPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/LRightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/LRightShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/LRightShiftFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/LRightShiftFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/Ops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Ops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/Remainder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/Remainder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/RemainderFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/RemainderFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/UnaryPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/UnaryPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/UnaryPlusFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/UnaryPlusFail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/project1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/project1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/project1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/project1/report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/clemitter/GenFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/clemitter/GenFactorial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +57,31 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1WioJqpDF6mSNoLN7qdMmxO1tU5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/taolin/Desktop/CS451/Projects/j--"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taolin/Desktop/CS451/Projects/j--&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/project1" />
       <recent name="$PROJECT_DIR$/tests/jvm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Scan">
+  <component name="RunManager" selected="Application.GenIsPrime">
     <configuration name="Analyze" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
       <module name="j--" />
@@ -78,6 +94,19 @@
       <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
       <module name="j--" />
       <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenIsPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project1.GenIsPrime" />
+      <module name="j--" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,7 +222,13 @@
       <item itemvalue="Application.PreAnalyze" />
       <item itemvalue="Application.SPIM" />
       <item itemvalue="Application.Scan" />
+      <item itemvalue="Application.GenIsPrime" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenIsPrime" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -208,6 +243,9 @@
       <updated>1579641706788</updated>
       <workItem from="1662657124708" duration="695000" />
       <workItem from="1662658331837" duration="48000" />
+      <workItem from="1662658491090" duration="5632000" />
+      <workItem from="1662678241819" duration="171000" />
+      <workItem from="1662678595959" duration="1444000" />
     </task>
     <servers />
   </component>
@@ -228,5 +266,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

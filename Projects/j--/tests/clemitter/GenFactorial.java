@@ -37,7 +37,6 @@ public class GenFactorial {
         // public class Factorial {
         modifiers.add("public");
         e.addClass(modifiers, "Factorial", "java/lang/Object", null, true);
-
         // public static void main(String[] args) {
         modifiers.clear();
         modifiers.add("public");
