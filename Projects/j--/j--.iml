@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests/clemitter" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests/jvm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/project1" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/bin" />
       <excludeFolder url="file://$MODULE_DIR$/classes" />
