@@ -53,22 +53,58 @@ public class GenIsPrime {
         e.addNoArgInstruction(AALOAD);
         e.addMemberAccessInstruction(INVOKESTATIC, "java/lang/Integer", "parseInt",
                 "(Ljava/lang/String;)I");
-        e.addNoArgInstruction(ISTORE_1);
+        e.addNoArgInstruction(ISTORE_1); // store n
 
         //  boolean result = isPrime(n);
         e.addNoArgInstruction(ILOAD_1);
         e.addMemberAccessInstruction(INVOKESTATIC, "IsPrime", "isPrime", "(I)Z");
-        e.addNoArgInstruction(ISTORE_2);
-
-        e.addMemberAccessInstruction(GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
-        e.addNoArgInstruction(ILOAD_1);
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println", "(D)V");
+        e.addNoArgInstruction(ISTORE_2); // result
 
         // if (result)
-        // Create an intance (say sb) of StringBuffer on stack for string concatenations
+        e.addNoArgInstruction(ILOAD_2); // result
+        e.addBranchInstruction(IFEQ, "Else");
+        e.addMemberAccessInstruction(GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
         //    sb = new StringBuffer();
+        e.addReferenceInstruction(NEW, "java/lang/StringBuffer");
+        e.addNoArgInstruction(DUP);
+        e.addMemberAccessInstruction(INVOKESPECIAL, "java/lang/StringBuffer", "<init>", "()V");
 
+        e.addNoArgInstruction(ILOAD_1); // n
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
+                "(I)Ljava/lang/StringBuffer;");
+        // append "str"
+        e.addLDCInstruction(" is a prime number");
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuffer;");
 
+        // System.out.println(sb.toString());
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer",
+                "toString", "()Ljava/lang/String;");
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
+                "(Ljava/lang/String;)V");
+        e.addBranchInstruction(GOTO, "SOUT");
+
+        e.addLabel("Else");
+        e.addMemberAccessInstruction(GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
+        e.addReferenceInstruction(NEW, "java/lang/StringBuffer"); // StringBuffer sb
+        e.addNoArgInstruction(DUP);
+        e.addMemberAccessInstruction(INVOKESPECIAL, "java/lang/StringBuffer", "<init>",
+                "()V"); // new StringBuffer();
+        e.addNoArgInstruction(ILOAD_1); // n
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
+                "(I)Ljava/lang/StringBuffer;");
+        // append "str"
+        e.addLDCInstruction(" is not a prime number");
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuffer;");
+
+        // System.out.println(sb.toString());
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer",
+                "toString", "()Ljava/lang/String;");
+        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
+                "(Ljava/lang/String;)V");
+
+        e.addLabel("SOUT");
         // return;
         e.addNoArgInstruction(RETURN);
 
@@ -78,94 +114,51 @@ public class GenIsPrime {
         modifiers.add("static");
         e.addMethod(modifiers, "isPrime", "(I)Z", null, true);
 
-        // if (n < 2) branch to "Recurse"
+        // if (n < 2)
+        e.addNoArgInstruction(ILOAD_0); // n
+        e.addNoArgInstruction(ICONST_2); // 2
+        e.addBranchInstruction(IF_ICMPGE, "GoLoop");
+        //return base case
+        e.addNoArgInstruction(ICONST_0);
+        e.addNoArgInstruction(IRETURN);
+
+        e.addLabel("GoLoop");
+        // for (int i = 2; i <= n / i; i++)
+        e.addNoArgInstruction(ICONST_2);
+        e.addNoArgInstruction(ISTORE_3); // i = 2
+        // n / i
+
+        e.addLabel("Looping");
+        e.addNoArgInstruction(ILOAD_3);
+        e.addNoArgInstruction(ILOAD_0); // n
+        e.addNoArgInstruction(ILOAD_3);
+        e.addNoArgInstruction(IDIV); // n / i
+
+        // i >  n / i
+        e.addBranchInstruction(IF_ICMPGT, "GoTrue");
+
+        // if (n % i == 0)
         e.addNoArgInstruction(ILOAD_0);
-        e.addNoArgInstruction(ICONST_1);
-        e.addBranchInstruction(IF_ICMPGE,"A");
-        // return false;
-        e.addLabel("False");
-        e.addNoArgInstruction(ICONST_1);
-        e.addNoArgInstruction(IRETURN);
-
-//        for (int i = 2; i <= n / i; i++) {
-//            if (n % i == 0) {
-//                 return false;
-//            }
-//          }
-        e.addLabel("A");
-        e.addLabel("For-loop");
-        e.addNoArgInstruction(ICONST_0); // 2
-        e.addNoArgInstruction(ISTORE_1); // i = 2
-        e.addNoArgInstruction(ILOAD_1); // i
-        e.addNoArgInstruction(ILOAD_0); // n
-        e.addNoArgInstruction(IDIV);
-        e.addBranchInstruction(IFGT, "Failed"); // (n > i)
-
-        e.addLabel("Passed");
-        e.addNoArgInstruction(ILOAD_1); // i
-        e.addNoArgInstruction(ILOAD_0); // n
+        e.addNoArgInstruction(ILOAD_3);
         e.addNoArgInstruction(IREM);
-        e.addBranchInstruction(IFEQ, "False");
-        e.addIINCInstruction(1, 1);
-        e.addNoArgInstruction(ICONST_1);
-        e.addBranchInstruction(GOTO, "For-loop");
-
-        // return true;
-        e.addLabel("Failed");
-        e.addNoArgInstruction(ICONST_1);
+        // n / i != 0
+        e.addBranchInstruction(IFNE, "i++");
+        e.addNoArgInstruction(ICONST_0);
         e.addNoArgInstruction(IRETURN);
 
+        e.addLabel("i++");
+        e.addNoArgInstruction(ILOAD_3);
+        e.addNoArgInstruction(ICONST_1);
+//        e.addIINCInstruction(0, 1);
+        e.addNoArgInstruction(IADD);
+        e.addNoArgInstruction(ISTORE_3);
+        e.addBranchInstruction(GOTO, "Looping");
+
+        e.addLabel("GoTrue");
+        e.addNoArgInstruction(ICONST_1);
+        e.addNoArgInstruction(IRETURN);
 
         // Write IsPrime.class to file system
         e.write();
     }
 }
-
-/*
-e.addBranchInstruction(IFEQ, "NotPrime");
-        //    sb = new StringBuffer();
-        e.addReferenceInstruction(NEW, "java/lang/StringBuffer"); // StringBuffer sb
-        e.addNoArgInstruction(DUP);
-        e.addMemberAccessInstruction(INVOKESPECIAL, "java/lang/StringBuffer", "<init>",
-                "()V"); // new StringBuffer();
-        // sb.append(n);
-        e.addNoArgInstruction(ILOAD_1);
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
-                "(I)Ljava/lang/StringBuffer;");
-
-        e.addLDCInstruction(" is a prime number");
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
-                "(I)Ljava/lang/StringBuffer;");
-
-        // System.out.println(sb.toString());
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer",
-                "toString", "()Ljava/lang/String;");
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
-                "(Ljava/lang/String;)V");
-
-        e.addBranchInstruction(GOTO, "Output");
-
-        e.addLabel("NotPrime");
-        //    sb = new StringBuffer();
-        e.addReferenceInstruction(NEW, "java/lang/StringBuffer"); // StringBuffer sb
-        e.addNoArgInstruction(DUP);
-        e.addMemberAccessInstruction(INVOKESPECIAL, "java/lang/StringBuffer", "<init>",
-                "()V"); // new StringBuffer();
-        // sb.append(n);
-        e.addNoArgInstruction(ILOAD_1);
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
-                "(I)Ljava/lang/StringBuffer;");
-
-        e.addLDCInstruction(" is not a prime number");
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
-                "(I)Ljava/lang/StringBuffer;");
-
-        // System.out.println(sb.toString());
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer",
-                "toString", "()Ljava/lang/String;");
-        e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
-                "(Ljava/lang/String;)V");
-
-        e.addLabel("Output");
-        e.addNoArgInstruction(RETURN);
- */
