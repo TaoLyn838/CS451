@@ -21,6 +21,10 @@ JBinaryExpression:
   - lhs and rhs must be integers (addition) or one of them must be a string (concatenation).
 - JSubtractOp
   - lhs and rhs must be integers.
+-JDivideOp
+  - lhs and rhs must be integers.
+-JRemainderOp
+  - lhs and rhs must be integers.
 
 JBooleanBinaryExpression:
 - JEqualOp:

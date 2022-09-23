@@ -73,7 +73,7 @@ relationalExpression ::= additiveExpression [ ( GT | LE ) additiveExpression
 
 additiveExpression ::= multiplicativeExpression { ( MINUS | PLUS ) multiplicativeExpression }
 
-multiplicativeExpression ::= unaryExpression { STAR unaryExpression }
+multiplicativeExpression ::= unaryExpression { (STAR | DIV | REM) unaryExpression }
 
 unaryExpression ::= INC unaryExpression
                   | MINUS unaryExpression

@@ -5,16 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GenIsPrime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IsPrime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1/TestF/Try.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1/TestF/Try.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UnaryPlus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenFactorialByteC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrybyteC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/GenIsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/project1/GenIsPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/TestF/IsP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/TestF/TestPrimeCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenFactorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenIsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar" beforeDir="false" afterPath="$PROJECT_DIR$/grammar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexicalgrammar" beforeDir="false" afterPath="$PROJECT_DIR$/lexicalgrammar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CharReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/CharReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Scanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/TestF/IsPrimeByteCode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/TestF/Try.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/TestF/Try.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/semantics" beforeDir="false" afterPath="$PROJECT_DIR$/semantics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +60,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="1WioJqpDF6mSNoLN7qdMmxO1tU5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -60,7 +85,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.Kotlin&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.textmate.bundles&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -253,6 +278,10 @@
       <workItem from="1663691311828" duration="202000" />
       <workItem from="1663691596992" duration="9082000" />
       <workItem from="1663714945965" duration="11252000" />
+      <workItem from="1663806222033" duration="327000" />
+      <workItem from="1663818071970" duration="18349000" />
+      <workItem from="1663890840515" duration="902000" />
+      <workItem from="1663892670918" duration="159000" />
     </task>
     <servers />
   </component>

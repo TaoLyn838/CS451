@@ -193,6 +193,11 @@ class JDivideOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -201,6 +206,9 @@ class JDivideOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IDIV);
     }
 }
 
@@ -224,6 +232,11 @@ class JRemainderOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -232,6 +245,9 @@ class JRemainderOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IREM);
     }
 }
 

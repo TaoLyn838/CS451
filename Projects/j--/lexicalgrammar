@@ -58,6 +58,10 @@ MINUS          ::= "-"
 PLUS           ::= "+"
 PLUS_ASSIGN    ::= "+="
 STAR           ::= "*"
+DIV            ::= "/"
+DIV_ASSIGN     ::= "/="
+REM            ::= "%"
+REM_ASSIGN     ::= "%="
 
 // Identifiers
 IDENTIFIER     ::= ( "a"..."z" | "A"..."Z" | "_" | "$" )

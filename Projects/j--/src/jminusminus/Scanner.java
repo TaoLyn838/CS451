@@ -2,6 +2,7 @@
 
 package jminusminus;
 
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -97,7 +98,7 @@ class Scanner {
                         nextCh();
                     }
                 } else {
-                    reportScannerError("Operator / is not supported in j--");
+                    return new TokenInfo(DIV, line);
                 }
             } else {
                 moreWhiteSpace = false;
@@ -135,6 +136,14 @@ class Scanner {
             case '*':
                 nextCh();
                 return new TokenInfo(STAR, line);
+            case '%':
+                nextCh();
+                if (ch == '=') {
+                    nextCh();
+                    return new TokenInfo(REM_ASSIGN, line);
+                } else {
+                    return new TokenInfo(REM, line);
+                }
             case '+':
                 nextCh();
                 if (ch == '=') {

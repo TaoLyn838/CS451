@@ -21,6 +21,10 @@ enum TokenKind {
     ASSIGN("="), DEC("--"), EQUAL("=="), GT(">"), INC("++"), LAND("&&"), LE("<="), LNOT("!"),
     MINUS("-"), PLUS("+"), PLUS_ASSIGN("+="), STAR("*"),
 
+//    QUESTION2
+    DIV("/"), DIV_ASSIGN("/="), REM("%"), REM_ASSIGN("%="),
+//    END
+
     // Separators.
     COMMA(","), DOT("."), LBRACK("["), LCURLY("{"), LPAREN("("), RBRACK("]"), RCURLY("}"),
     RPAREN(")"), SEMI(";"),
@@ -31,6 +35,7 @@ enum TokenKind {
     // Literals.
     CHAR_LITERAL("<CHAR_LITERAL>"), FALSE("false"), INT_LITERAL("<INT_LITERAL>"), NULL("null"),
     STRING_LITERAL("<STRING_LITERAL>"), TRUE("true");
+
 
     // The token kind's string representation.
     private String image;

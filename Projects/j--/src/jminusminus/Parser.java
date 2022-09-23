@@ -776,7 +776,14 @@ public class Parser {
         while (more) {
             if (have(STAR)) {
                 lhs = new JMultiplyOp(line, lhs, unaryExpression());
-            } else {
+            }
+            else if (have(DIV)) {
+                lhs = new JDivideOp(line, lhs, unaryExpression());
+            }
+            else if (have(REM)) {
+                lhs = new JRemainderOp(line, lhs, unaryExpression());
+            }
+            else {
                 more = false;
             }
         }
@@ -798,8 +805,11 @@ public class Parser {
         int line = scanner.token().line();
         if (have(INC)) {
             return new JPreIncrementOp(line, unaryExpression());
-        } else if (have(MINUS)) {
+        }
+        else if (have(MINUS)) {
             return new JNegateOp(line, unaryExpression());
+        } else if (have(PLUS)) {
+            return new JUnaryPlusOp(line, unaryExpression());
         } else {
             return simpleUnaryExpression();
         }
