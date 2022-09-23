@@ -25,6 +25,18 @@ JBinaryExpression:
   - lhs and rhs must be integers.
 -JRemainderOp
   - lhs and rhs must be integers.
+-JOrOp
+  - lhs and rhs must be integers.
+-JXorOp
+  - lhs and rhs must be integers.
+-JAndOp
+  - lhs and rhs must be integers.
+-JALeftShiftOp
+  - lhs and rhs must be integers.
+-JARightShiftOp
+  - lhs and rhs must be integers.
+-JLRightShiftOp
+  - lhs and rhs must be integers.
 
 JBooleanBinaryExpression:
 - JEqualOp:
@@ -118,6 +130,8 @@ JUnaryExpression:
   - The operand must be an integer.
 - JPreIncrementOp:
   - The operand must have an LValue.
+  - The operand must be an integer.
+- JComplementOp:
   - The operand must be an integer.
 
 JWhileStatement:

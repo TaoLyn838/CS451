@@ -291,6 +291,9 @@ class JUnaryPlusOp extends JUnaryExpression {
          */
         public JExpression analyze(Context context) {
             // TODO
+            operand = operand.analyze(context);
+            operand.type().mustMatchExpected(line(), Type.INT);
+            type = Type.INT;
             return this;
         }
 
@@ -299,6 +302,9 @@ class JUnaryPlusOp extends JUnaryExpression {
          */
         public void codegen(CLEmitter output) {
             // TODO
+            operand.codegen(output);
+            output.addNoArgInstruction(ICONST_M1);
+            output.addNoArgInstruction(IXOR);
         }
     }
 

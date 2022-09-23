@@ -271,6 +271,11 @@ class JOrOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -279,6 +284,9 @@ class JOrOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IOR);
     }
 }
 
@@ -302,6 +310,11 @@ class JXorOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -310,6 +323,9 @@ class JXorOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IXOR);
     }
 }
 
@@ -333,6 +349,11 @@ class JAndOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -341,6 +362,9 @@ class JAndOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IAND);
     }
 }
 
@@ -364,6 +388,11 @@ class JALeftShiftOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -372,6 +401,9 @@ class JALeftShiftOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(ISHL);
     }
 }
 
@@ -389,12 +421,16 @@ class JARightShiftOp extends JBinaryExpression {
     public JARightShiftOp(int line, JExpression lhs, JExpression rhs) {
         super(line, ">>", lhs, rhs);
     }
-
     /**
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -403,6 +439,9 @@ class JARightShiftOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(ISHR);
     }
 }
 
@@ -426,6 +465,11 @@ class JLRightShiftOp extends JBinaryExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        lhs = (JExpression) lhs.analyze(context);
+        rhs = (JExpression) rhs.analyze(context);
+        lhs.type().mustMatchOneOf(line(), Type.INT);
+        rhs.type().mustMatchOneOf(line(), Type.INT);
+        type = Type.INT;
         return this;
     }
 
@@ -434,5 +478,8 @@ class JLRightShiftOp extends JBinaryExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IUSHR);
     }
 }

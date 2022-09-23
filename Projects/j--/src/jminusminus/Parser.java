@@ -779,11 +779,21 @@ public class Parser {
             }
             else if (have(DIV)) {
                 lhs = new JDivideOp(line, lhs, unaryExpression());
-            }
-            else if (have(REM)) {
+            } else if (have(REM)) {
                 lhs = new JRemainderOp(line, lhs, unaryExpression());
-            }
-            else {
+            } else if (have(IN_OR)) {
+                lhs = new JOrOp(line, lhs, unaryExpression());
+            } else if (have(EX_OR)) {
+                lhs = new JXorOp(line, lhs, unaryExpression());
+            } else if (have(BIT_AND)) {
+                lhs = new JAndOp(line, lhs, unaryExpression());
+            } else if (have(LLE)) {
+                lhs = new JALeftShiftOp(line, lhs, unaryExpression());
+            } else if (have(RE)) {
+                lhs = new JARightShiftOp(line, lhs, unaryExpression());
+            } else if (have(RRE)) {
+                lhs = new JLRightShiftOp(line, lhs, unaryExpression());
+            } else {
                 more = false;
             }
         }
@@ -810,6 +820,8 @@ public class Parser {
             return new JNegateOp(line, unaryExpression());
         } else if (have(PLUS)) {
             return new JUnaryPlusOp(line, unaryExpression());
+        } else if (have(BITWISE_COMPLETE)) {
+            return new JComplementOp(line, unaryExpression());
         } else {
             return simpleUnaryExpression();
         }

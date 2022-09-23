@@ -136,6 +136,16 @@ class Scanner {
             case '*':
                 nextCh();
                 return new TokenInfo(STAR, line);
+//                Adding case
+            case '|':
+                nextCh();
+                return new TokenInfo(IN_OR, line);
+            case '^':
+                nextCh();
+                return new TokenInfo(EX_OR, line);
+            case '~':
+                nextCh();
+                return new TokenInfo(BITWISE_COMPLETE, line);
             case '%':
                 nextCh();
                 if (ch == '=') {
@@ -144,6 +154,7 @@ class Scanner {
                 } else {
                     return new TokenInfo(REM, line);
                 }
+//                END
             case '+':
                 nextCh();
                 if (ch == '=') {
@@ -173,12 +184,26 @@ class Scanner {
                 }
             case '>':
                 nextCh();
-                return new TokenInfo(GT, line);
+                if (ch == '>') {
+                    nextCh();
+                    if (ch == '>') {
+                        nextCh();
+                        return new TokenInfo(RRE, line);
+                    } else {
+                        return new TokenInfo(RE, line);
+                    }
+                } else {
+                    return new TokenInfo(GT, line);
+                }
+
             case '<':
                 nextCh();
                 if (ch == '=') {
                     nextCh();
                     return new TokenInfo(LE, line);
+                } else if (ch == '<') {
+                    nextCh();
+                    return new TokenInfo(LLE, line);
                 } else {
                     reportScannerError("Operator < is not supported in j--");
                     return getNextToken();
@@ -192,8 +217,7 @@ class Scanner {
                     nextCh();
                     return new TokenInfo(LAND, line);
                 } else {
-                    reportScannerError("Operator & is not supported in j--");
-                    return getNextToken();
+                    return new TokenInfo(BIT_AND, line);
                 }
             case '\'':
                 buffer = new StringBuffer();

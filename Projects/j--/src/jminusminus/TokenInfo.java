@@ -21,9 +21,15 @@ enum TokenKind {
     ASSIGN("="), DEC("--"), EQUAL("=="), GT(">"), INC("++"), LAND("&&"), LE("<="), LNOT("!"),
     MINUS("-"), PLUS("+"), PLUS_ASSIGN("+="), STAR("*"),
 
-//    QUESTION2
+//    Proj_1
+//    Question2
     DIV("/"), DIV_ASSIGN("/="), REM("%"), REM_ASSIGN("%="),
+//    Question3
+    BITWISE_COMPLETE("~"), IN_OR("|"), EX_OR("^"), BIT_AND("&"),
+//    Question4
+    LLE("<<"), RE(">>"), RRE(">>>"),
 //    END
+
 
     // Separators.
     COMMA(","), DOT("."), LBRACK("["), LCURLY("{"), LPAREN("("), RBRACK("]"), RCURLY("}"),

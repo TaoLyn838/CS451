@@ -62,6 +62,13 @@ DIV            ::= "/"
 DIV_ASSIGN     ::= "/="
 REM            ::= "%"
 REM_ASSIGN     ::= "%="
+BITWISE_COMPLETE ::= "~"
+IN_OR          ::= "|"
+EX_OR          ::= "^"
+BIT_AND        ::= "&"
+LLE            ::= "<<"
+RE             ::= ">>"
+RRE            ::= ">>>"
 
 // Identifiers
 IDENTIFIER     ::= ( "a"..."z" | "A"..."Z" | "_" | "$" )
