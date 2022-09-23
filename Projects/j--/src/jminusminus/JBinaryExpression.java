@@ -273,8 +273,8 @@ class JOrOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
         type = Type.INT;
         return this;
     }
@@ -312,8 +312,8 @@ class JXorOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
         type = Type.INT;
         return this;
     }
@@ -351,8 +351,8 @@ class JAndOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
         type = Type.INT;
         return this;
     }
@@ -390,8 +390,8 @@ class JALeftShiftOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
         type = Type.INT;
         return this;
     }
@@ -428,8 +428,8 @@ class JARightShiftOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
         type = Type.INT;
         return this;
     }
@@ -467,8 +467,9 @@ class JLRightShiftOp extends JBinaryExpression {
         // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
-        lhs.type().mustMatchOneOf(line(), Type.INT);
-        rhs.type().mustMatchOneOf(line(), Type.INT);
+        lhs.type().mustMatchExpected(line(), Type.INT);
+        rhs.type().mustMatchExpected(line(), Type.INT);
+//        rhs.type().mustMatchOneOf();
         type = Type.INT;
         return this;
     }

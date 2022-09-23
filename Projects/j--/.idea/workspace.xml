@@ -5,32 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ARightShift.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnaryPlus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammar" beforeDir="false" afterPath="$PROJECT_DIR$/grammar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexicalgrammar" beforeDir="false" afterPath="$PROJECT_DIR$/lexicalgrammar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARightShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LRightShift.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CharReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/CharReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Scanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semantics" beforeDir="false" afterPath="$PROJECT_DIR$/semantics" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project1/report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,6 +260,7 @@
       <workItem from="1663890840515" duration="902000" />
       <workItem from="1663892670918" duration="201000" />
       <workItem from="1663899774463" duration="10470000" />
+      <workItem from="1663956183741" duration="5988000" />
     </task>
     <servers />
   </component>
