@@ -69,6 +69,11 @@ BIT_AND        ::= "&"
 LLE            ::= "<<"
 RE             ::= ">>"
 RRE            ::= ">>>"
+QUESTION_MARK  ::= "?"
+COLON          ::= ":"
+LNOT_EQUAL     ::= "!="
+DEC_EQUAL      ::= "-="
+RE_EQUAL       ::= ">>="
 
 // Identifiers
 IDENTIFIER     ::= ( "a"..."z" | "A"..."Z" | "_" | "$" )

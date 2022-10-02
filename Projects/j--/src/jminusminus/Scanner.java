@@ -272,7 +272,6 @@ class Scanner {
                 } else {
                     return new TokenInfo(GT, line);
                 }
-
             case '<':
                 nextCh();
                 if (ch == '=') {
@@ -287,12 +286,16 @@ class Scanner {
                         return new TokenInfo(LLE, line);
                     }
                 } else {
-                    nextCh();
                     return new TokenInfo(LT, line);
                 }
             case '!':
                 nextCh();
-                return new TokenInfo(LNOT, line);
+                if (ch == '=') {
+                    nextCh();
+                    return new TokenInfo(LNOT_EQUAL, line);
+                } else {
+                    return new TokenInfo(LNOT, line);
+                }
             case '&':
                 nextCh();
                 if (ch == '&') {

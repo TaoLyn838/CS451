@@ -41,6 +41,8 @@ enum TokenKind {
     DEFAULT("default"), DO("do"), DOUBLE("double"), FINALLY("finally"), FOR("for"),
     IMPLEMENTS("implements"), INTERFACE("interface"), LONG("long"), SWITCH("switch"),
     THROW("throw"), THROWS("throws"), TRY("try"),
+//  Question4
+    LONG_LITERAL("<LONG_LITERAL>"), DOUBLE_LITERAL("<DOUBLE_LITERAL>"),
 //                                               END
 
     // Separators.
