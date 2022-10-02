@@ -77,6 +77,7 @@ public class GenIsPrime {
         e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer", "append",
                 "(Ljava/lang/String;)Ljava/lang/StringBuffer;");
 
+
         // System.out.println(sb.toString());
         e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/lang/StringBuffer",
                 "toString", "()Ljava/lang/String;");
@@ -103,7 +104,7 @@ public class GenIsPrime {
                 "toString", "()Ljava/lang/String;");
         e.addMemberAccessInstruction(INVOKEVIRTUAL, "java/io/PrintStream", "println",
                 "(Ljava/lang/String;)V");
-
+        
         e.addLabel("SOUT");
         // return;
         e.addNoArgInstruction(RETURN);

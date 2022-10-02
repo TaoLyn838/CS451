@@ -21,15 +21,27 @@ enum TokenKind {
     ASSIGN("="), DEC("--"), EQUAL("=="), GT(">"), INC("++"), LAND("&&"), LE("<="), LNOT("!"),
     MINUS("-"), PLUS("+"), PLUS_ASSIGN("+="), STAR("*"),
 
-//    Proj_1
+//                                              Proj_1
 //    Question2
-    DIV("/"), DIV_ASSIGN("/="), REM("%"), REM_ASSIGN("%="),
+    DIV("/"), REM("%"),
 //    Question3
     BITWISE_COMPLETE("~"), IN_OR("|"), EX_OR("^"), BIT_AND("&"),
 //    Question4
     LLE("<<"), RE(">>"), RRE(">>>"),
-//    END
+//                                               END
 
+//                                              Proj_2
+//  Question2
+    DIV_ASSIGN("/="), REM_ASSIGN("%="), QUESTION_MARK("?"), COLON(":"),
+    LNOT_EQUAL("!="), DEC_EQUAL("-="), STAR_EQUAL("*="), RE_EQUAL(">>="),
+    RRE_EQUAL(">>>="), GT_EQUAL(">="), LLE_EQUAL("<<="), LT("<"), EX_OR_EQUAL("^="),
+    IN_OR_EQUAL("|="), OR("||"), BIT_AND_EQUAL("&="),
+//  Question3
+    BREAK("break"), CASE("case"), CATCH("catch"), CONTINUE("continue"),
+    DEFAULT("default"), DO("do"), DOUBLE("double"), FINALLY("finally"), FOR("for"),
+    IMPLEMENTS("implements"), INTERFACE("interface"), LONG("long"), SWITCH("switch"),
+    THROW("throw"), THROWS("throws"), TRY("try"),
+//                                               END
 
     // Separators.
     COMMA(","), DOT("."), LBRACK("["), LCURLY("{"), LPAREN("("), RBRACK("]"), RCURLY("}"),

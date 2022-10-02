@@ -5,30 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project2/DoubleLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/DoubleLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/IntLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/IntLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/Keywords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/Keywords.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/LongLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/LongLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/MalformedLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/MalformedLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/MultiLineComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/MultiLineComment.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/Operators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/Operators.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/project2_cs451.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project2/report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_16_22,_8_41_PM_[Default_Changelist]/j--.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_16_22,_8_41_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_16_22__8_41_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenIsPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsPrime.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/GenIsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/project1/GenIsPrime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +27,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="savedDocuments">
+              <list>
+                <SoqlQuerySavedDocument>
+                  <option name="name" value="SOQL Query 1" />
+                </SoqlQuerySavedDocument>
+              </list>
+            </option>
+          </SoqlQuerySettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -275,6 +275,10 @@
       <workItem from="1663956183741" duration="5988000" />
       <workItem from="1664383483595" duration="167000" />
       <workItem from="1664383682576" duration="2645000" />
+      <workItem from="1664480916626" duration="801000" />
+      <workItem from="1664571530895" duration="224000" />
+      <workItem from="1664575904008" duration="273000" />
+      <workItem from="1664674996969" duration="7773000" />
     </task>
     <servers />
   </component>
