@@ -6,24 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexicalgrammar" beforeDir="false" afterPath="$PROJECT_DIR$/lexicalgrammar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPlusOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPlusOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSubtractOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JSubtractOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/Operators.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/project2/Operators.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/TokenInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +278,8 @@
       <workItem from="1664692912610" duration="534000" />
       <workItem from="1664723050204" duration="3236000" />
       <workItem from="1664727135333" duration="60000" />
-      <workItem from="1664727245101" duration="2674000" />
+      <workItem from="1664727245101" duration="2881000" />
+      <workItem from="1664968648214" duration="108000" />
     </task>
     <servers />
   </component>

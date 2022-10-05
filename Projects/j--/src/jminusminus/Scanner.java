@@ -145,9 +145,6 @@ class Scanner {
             case ',':
                 nextCh();
                 return new TokenInfo(COMMA, line);
-            case '.':
-                nextCh();
-                return new TokenInfo(DOT, line);
             case '[':
                 nextCh();
                 return new TokenInfo(LBRACK, line);
@@ -365,12 +362,47 @@ class Scanner {
             case '7':
             case '8':
             case '9':
+            case '.':
                 buffer = new StringBuffer();
-                while (isDigit(ch)) {
+                if (isDigit(ch)) {
+                    buffer.append(appendDigit());
+                    if (!isDoubleLiteral(ch)) {
+                        if (ch == 'l' || ch == 'L') {
+                            buffer.append(ch);
+                            nextCh();
+                            return new TokenInfo(LONG_LITERAL, buffer.toString(), line);
+                        }
+                        return new TokenInfo(INT_LITERAL, buffer.toString(), line);
+                    }
+                    if (ch == '.') {
+                        buffer.append(ch);
+                        nextCh();
+                        if (isDigit(ch)) buffer.append(appendDigit());
+                    }
+                    if (ch == 'e' || ch == 'E') {
+                        buffer.append(appendEuler());
+                        if (isDigit(ch)) buffer.append(appendDigit());
+                    }
+                    if (ch == 'd' || ch == 'D') {
+                        buffer.append(ch);
+                        nextCh();
+                    }
+                    return new TokenInfo(DOUBLE_LITERAL, buffer.toString(), line);
+                } else if (ch == '.') {
                     buffer.append(ch);
                     nextCh();
+                    if (!isDigit(ch)) return new TokenInfo(DOT, line);
+                    if (isDigit(ch)) buffer.append(appendDigit());
+                    if (ch == 'e' || ch == 'E') {
+                        buffer.append(appendEuler());
+                        if (isDigit(ch)) buffer.append(appendDigit());
+                    }
+                    if (ch == 'd' || ch == 'D') {
+                        buffer.append(ch);
+                        nextCh();
+                    }
+                    return new TokenInfo(DOUBLE_LITERAL, buffer.toString(), line);
                 }
-                return new TokenInfo(INT_LITERAL, buffer.toString(), line);
             default:
                 if (isIdentifierStart(ch)) {
                     buffer = new StringBuffer();
@@ -482,6 +514,62 @@ class Scanner {
     // otherwise.
     private boolean isIdentifierPart(char c) {
         return (isIdentifierStart(c) || isDigit(c));
+    }
+
+    /**
+     *              Project2
+     * Helper method for Double literal.
+     * Checking if a Double variable that it is an Euler number.
+     * @return a string that only include 'e/E' or 'e+/e-/E+/E-'.
+     */
+    private String appendEuler() {
+        StringBuilder buffer = new StringBuilder();
+        buffer.append(ch);
+        nextCh();
+
+        // checking '+' or '-'
+        if (ch == '+' || ch == '-') {
+            buffer.append(ch);
+            nextCh();
+        }
+
+        return buffer.toString();
+    }
+
+    /**
+     *              Project2
+     * Scan all Digit and append it to a StringBuffer buffer.
+     * @return a string that only include number from '0'...'9'
+     */
+    private String appendDigit () {
+        StringBuilder buffer = new StringBuilder();
+        buffer.append(ch);
+        nextCh();
+        while (isDigit(ch)) {
+            buffer.append(ch);
+            nextCh();
+        }
+        return buffer.toString();
+    }
+
+    /**
+     *              Project2
+     * @param ch name of character.
+     * @return true if char ch is one of these case. Otherwise, return false.
+     */
+    private boolean isDoubleLiteral (char ch) {
+        switch (ch){
+            case '.':
+            case 'e':
+            case 'E':
+            case 'd':
+            case 'D':
+            case '-':
+            case '+':
+                return true;
+            default:
+                return false;
+        }
     }
 }
 
