@@ -119,12 +119,7 @@ class JPlusOp extends JBinaryExpression {
             return (new JStringConcatenationOp(line, lhs, rhs)).analyze(context);
         } else if (lhs.type() == Type.INT && rhs.type() == Type.INT) {
             type = Type.INT;
-        } else if (lhs.type() == Type.DOUBLE && rhs.type() == Type.DOUBLE) {
-            type = Type.DOUBLE;
-        } else if (lhs.type() == Type.LONG && rhs.type() == Type.LONG) {
-            type = Type.LONG;
-        }
-        else {
+        } else {
             type = Type.ANY;
             JAST.compilationUnit.reportSemanticError(line(), "Invalid operand types for +");
         }
@@ -135,9 +130,9 @@ class JPlusOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-            lhs.codegen(output);
-            rhs.codegen(output);
-            output.addNoArgInstruction(IADD);
+        lhs.codegen(output);
+        rhs.codegen(output);
+        output.addNoArgInstruction(IADD);
     }
 }
 
@@ -197,7 +192,6 @@ class JDivideOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -210,7 +204,6 @@ class JDivideOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IDIV);
@@ -236,7 +229,6 @@ class JRemainderOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -249,7 +241,6 @@ class JRemainderOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IREM);
@@ -275,7 +266,6 @@ class JOrOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -288,7 +278,6 @@ class JOrOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IOR);
@@ -314,7 +303,6 @@ class JXorOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -327,7 +315,6 @@ class JXorOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IXOR);
@@ -353,7 +340,6 @@ class JAndOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -366,7 +352,6 @@ class JAndOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IAND);
@@ -392,7 +377,6 @@ class JALeftShiftOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -405,7 +389,6 @@ class JALeftShiftOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(ISHL);
@@ -426,11 +409,11 @@ class JARightShiftOp extends JBinaryExpression {
     public JARightShiftOp(int line, JExpression lhs, JExpression rhs) {
         super(line, ">>", lhs, rhs);
     }
+
     /**
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
@@ -443,7 +426,6 @@ class JARightShiftOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(ISHR);
@@ -469,12 +451,10 @@ class JLRightShiftOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public JExpression analyze(Context context) {
-        // TODO
         lhs = (JExpression) lhs.analyze(context);
         rhs = (JExpression) rhs.analyze(context);
         lhs.type().mustMatchExpected(line(), Type.INT);
         rhs.type().mustMatchExpected(line(), Type.INT);
-//        rhs.type().mustMatchOneOf();
         type = Type.INT;
         return this;
     }
@@ -483,7 +463,6 @@ class JLRightShiftOp extends JBinaryExpression {
      * {@inheritDoc}
      */
     public void codegen(CLEmitter output) {
-        // TODO
         lhs.codegen(output);
         rhs.codegen(output);
         output.addNoArgInstruction(IUSHR);

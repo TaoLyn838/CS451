@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2/report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLiteralDouble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralLong.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLiteralLong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project3/project3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/project3/project3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project3/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project3/report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JBinaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JLiteralDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JLiteralDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JLiteralLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JLiteralLong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JUnaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Scanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +55,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1WioJqpDF6mSNoLN7qdMmxO1tU5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -280,6 +291,10 @@
       <workItem from="1664727245101" duration="2881000" />
       <workItem from="1664968648214" duration="108000" />
       <workItem from="1665431898322" duration="6721000" />
+      <workItem from="1666039701554" duration="1903000" />
+      <workItem from="1666303202780" duration="4876000" />
+      <workItem from="1666471372594" duration="4735000" />
+      <workItem from="1666483687306" duration="36784000" />
     </task>
     <servers />
   </component>

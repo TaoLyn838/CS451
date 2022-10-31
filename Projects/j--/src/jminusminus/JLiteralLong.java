@@ -27,6 +27,7 @@ class JLiteralLong extends JExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        type = Type.LONG;
         return this;
     }
 
@@ -35,6 +36,17 @@ class JLiteralLong extends JExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        // change input string to long type
+        long l = Long.parseLong(text);
+        // if input string equals 0l\L or 1l\L send to the CLEmitter instance.
+        // else using the idc instruction method from CLEmitter to push a value of type long.
+        if (l == 0L) {
+            output.addNoArgInstruction(LCONST_0);
+        } else if (l == 1L) {
+            output.addNoArgInstruction(LCONST_1);
+        } else {
+            output.addLDCInstruction(l);
+        }
     }
 
     /**

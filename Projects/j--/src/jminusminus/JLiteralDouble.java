@@ -27,6 +27,7 @@ class JLiteralDouble extends JExpression {
      */
     public JExpression analyze(Context context) {
         // TODO
+        type = Type.DOUBLE;
         return this;
     }
 
@@ -35,6 +36,17 @@ class JLiteralDouble extends JExpression {
      */
     public void codegen(CLEmitter output) {
         // TODO
+        // change input string to long type
+        double d = Double.parseDouble(text);
+        // if input string equals default value of double (0.0d and 1.0d) send to the CLEmitter instance.
+        // else using the idc instruction method from CLEmitter to push a value of type long.
+        if (d == 0.0d) {
+            output.addNoArgInstruction(DCONST_0);
+        } else if (d == 1.0d) {
+            output.addNoArgInstruction(DCONST_1);
+        } else {
+            output.addLDCInstruction(d);
+        }
     }
 
     /**
