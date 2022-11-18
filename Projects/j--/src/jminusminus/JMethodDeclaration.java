@@ -167,6 +167,9 @@ class JMethodDeclaration extends JAST implements JMember {
                 returnType == Type.CHAR) {
             partial.addNoArgInstruction(ICONST_0);
             partial.addNoArgInstruction(IRETURN);
+        } else if (returnType == Type.LONG) {
+            partial.addNoArgInstruction(DCONST_0);
+            partial.
         } else {
             partial.addNoArgInstruction(ACONST_NULL);
             partial.addNoArgInstruction(ARETURN);

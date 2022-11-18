@@ -37,7 +37,7 @@ class JLiteralLong extends JExpression {
     public void codegen(CLEmitter output) {
         // TODO
         // change input string to long type
-        long l = Long.parseLong(text);
+        long l = Long.parseLong(text); // 89
         // if input string equals 0l\L or 1l\L send to the CLEmitter instance.
         // else using the idc instruction method from CLEmitter to push a value of type long.
         if (l == 0L) {

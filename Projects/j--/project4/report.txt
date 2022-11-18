@@ -1,20 +1,19 @@
 1. Enter the number of hours it took you to complete the project between
    the <<< and >>> signs below (eg, <<<10>>>).
 
-   <<< >>>
+   <<< 50 >>>
    
 2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
    between the <<< and >>> signs below (eg, <<<3>>>).
 
-   <<< >>>
+   <<< 4 >>>
 
 3. Did you receive help from anyone? List their names, status (classmate, 
    CS451/651 grad, TA, other), and the nature of help received.
 
    Name               Status       Help Received
    ----               ------       -------------
-
-   ...                ...          ...
+   Pengcheng Wei      Classmate    Problem 14. (Interface Type Declaration)
 
 4. Provide a short description of how you approached each problem, issues you 
    encountered, and how you resolved those issues.
@@ -22,79 +21,201 @@
    Part I (Additions to JavaCC Scanner)
 
    Problem 1 (Multiline Comment)
-      Approach: ...
+      Approach:
+      1) Following the question, I open j--.jj file. I see a comment wrote
+      'Single line comment -- ignored' at line 104. I then start to imitate
+      it to write down my problem 1 answer.
+      2) The start key word of multi comment line is '/*' at its state
+      (IN_MULTI_LINE_COMMENT).
+      3) Then we into <IN_MULTI_LINE_COMMENT> state, and SKIP all characters
+      util to next state.
+      4) When scanner write character '*/', it into <DEFAULT> state.
+      5) Using the rule: '<COMMENT: ~[]>' to end.
 
-      Issues and resolution: ...
+      Issues and resolution:
+      The biggest challenge for me is that, I do not know what is a correct
+      way to imitate the single line comment to write the multi line comment.
+      It token my 1 hour to understand what is the single line code talking
+      about, speciality, in '<IN_SINGLE_LINE_COMMENT>' and '<COMMENT: ~[]>'.
+      Then, I find the example in textbook page 54, 2.9 JavaCC: Tool for
+      Generating Scanners.
+      I realize that <IN_SINGLE_LINE_COMMENT> is a state name with matching
+      the // puts the scanner into it. And, once we have skipped all other
+      characters while in the COMMENT state, we need another rule: '<COMMENT: ~[]>'.
+      Finally, I write the multi comment and get the right answer.
+
 
    Problem 2 (Operators)
-      Approach: ...
+      Approach:
+      1) Using parser.java file to finding the right place. I then find
+      a comment wrote '// Operators' at line 176 that is the same
+      as parser.
+      2) Adding additional token at line 191, and write a comment to mark
+      it at line 190 to make debug easier.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 3 (Reserved Words)
-      Approach: ...
+      Approach:
+      1) Using parser.java file to finding the right place. I then find
+      a comment wrote '// Reserved words' at line 118 that is the same
+      as parser.
+      2) Adding additional token at line 145, and write a comment to mark
+      it at line 144 to make debug easier.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 4 (Literals)
-      Approach: ...
+      Approach:
+      1) Following the question, I find the comment called '// Literals'
+      at line 227, which is the place for me to implement DOUBLE and LONG
+      literals. Due to I already accomplish it in scanner, so it does
+      not hard to implement in 'j--.jj'.
+      2) For LONG, it allow (l | L) after <DIGITS>, so add those two
+      condition in the LONG literal.
+      3) For DOUBLE, it has more condition than LONG, which are EXPONENT
+      and SUFFIX at line 223 to 224. Thus, I add these two condition in
+      identifiers, and add them to DOUBLE Literals.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Part II (Additions to JavaCC Parser)
 
    Problem 5 (Long and Double Basic Types)
-      Approach: ...
+      Approach:
+      1) Following the question, added LONG and DOUBLE to
+      literal() method at line 2278 and basicType() at line 1383.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 6 (Operators)
-      Approach: ...
+      Approach:
+      1) Because we're done this in Project 3, so I just use Parser.java
+      to implement those operators.
+      2) The different between Java and JavaCC is that JavaCC does not
+      use if-else but '|' instead.
+      3) Using "|" to decide between possible operators in the parse
+      and return statement.
+      4) For while loop, I "()*" for parsing multiple arguments.
+      5) "[]" brackets were usable in parsing optional arguments.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 7 (Conditional Expression)
-      Approach: ...
+      Approach:
+      1) Because we're done this in Project 3, so I just use Parser.java
+      to implement Conditional Expression.
+      2) Following the grammar, implement conditionalOrExpression()
+      and conditionalAndExpression() methods as sub-methods for
+      conditionalExpression() as the same as Parser.
+      3) Following the Parser.java file, but change the keyword,
+      like '|' instead of if-else...
+      4) In the code, I block declares and initializes local
+      variables line, lhs, thenExpression, and elseExpression, and
+      initialize them to null from the start.
+      5) In try statement, the <QUESTION> token before parse an expression(),
+      and <COLON> token is before conditionalExpression().
+      6) return a new JConditionalExpression() at the end of
+      conditionalExpression().
 
-      Issues and resolution: ...
+      Issues and resolution: No.
+
 
    Problem 8 (Do Statement)
-      Approach: ...
+      Approach:
+      1) In the statement() method at line 811, add a new statement
+      call JDoStatement at line 842.
+      2) For DO statement, it is following by DO -> While-loop -> <SEMI>.
+      Thus, I create a new JDoStatement after <SEMI> at the end.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 9 (For Statement)
-      Approach: ...
+      Approach:
+      1) In statement() method at line 811, create <FOR> regular
+      expression with required <PAREN> and <SEMI> tokens.
+      2) add new local variables for the first block for the
+       required parameters of the JForStatement().
+      3) Create a helper method called forInit() to return a
+      list of initialization statements
+      4) In forInit(), initializes local call line, forInitStatement,
+      type, vdecls and return list forInitStatements.
+      5) Then parsed a single statementExpression() in forInitStatements list
+       for every COMMA token.
+      6) Finally, return forInitStatements.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 10 (Break Statement)
-      Approach: ...
+      Approach:
+      1) In statement() method at line 811, create a break condition
+       when <BREAK> token parsed.
+      2) Store the line number.
+      3) Parse a <SEMI> token.
+      4) Finally, return a new JBreakStatement().
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 11 (Continue Statement)
-      Approach: ...
+      Approach:
+      1) In statement() method at line 811, create a break condition
+       when <CONTINUE> token parsed.
+      2) Store the line number.
+      3) Parse a <SEMI> token.
+      4) Finally, return a new JContinueStatement().
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 12 (Switch Statement)
-      Approach: ...
+      Approach:
+      1) Using parser to implement switch statement.
+      2) Add <SWITCH> token to into with statement at line 884.
+      3) returning a JSwitchStatement() at the end with parameters line if
+       switch has zero or more occurrences of switchBlockStatementGroup().
 
-      Issues and resolution: ...
+
+      Issues and resolution: No.
 
    Problem 13 (Exception Handlers)
-      Approach: ...
+      Approach:
+      1) return a JThrowStatement in <THROW> and <SEMI> tokens.
+      2) <TRY> involved first parsing the required block then zero or more "()*"
+        occurrences of CATCH blocks.
+      3) Last block implemented with  brackets "[]" to implement zero or one occurrence.
 
-      Issues and resolution: ...
+      Issues and resolution: No.
 
    Problem 14 (Interface Type Declaration)
-      Approach: ...
+      Approach:
+      1) Following the parsing add to helper methods call interfaceBody()
+      and interfaceMemberDecl().
+      2) For interfaceBody(), it just the same as classBody().
+        a) Change classBody() to interfaceBody().
+        b) Change memberDecl() to interfaceMemberDecl()
+        c) Change interfaceDeclaration() to classDeclaration().
+        d) <CLASS> token for <INTERFACE> token, and <IMPLEMENTS> token to the <EXTENDS> token.
+      3) For interfaceMemberDecl()
+        a) Add if condition for all interface has abstract modifier.
+        b) If LOOKAHEAD with <IDENTIFIER> and <LPAREN>, just return the
+        interfaceDecl.
+        c) If LOOKAHEAD with (<VOID> | type()), <IDENTIFIER> and <LPAREN>,
+        throw a JMethodDeclaration then add <SEMI> token return interfaceDecl.
 
-      Issues and resolution: ...
+      Issues and resolution:
+      I stuck in add abstract in interfaceMemberDecl(). My strategy is
+      writing <ABSTRACT> token in side try statement, but failed. After
+      two days, I ask my friend Pengcheng, he suggests me that I can add
+      "abstract" from the start if it does not have one. He inspired me
+      that I can set a conditional to check if interface has abstract type.
+      I finally add if condition at line 612 with
+      "if (!mods.contains("abstract")) { mods.add("abstract");}". The
+      question solved.
+
 
 5. List any other comments here. Feel free to provide any feedback on how
    much you learned from doing the assignment, and whether you enjoyed
    doing it.
 
-   ...
+   Thanks for the Project 3 answer support by Professor Swaim. Code is super
+    clear and very helpful for me to build j--.jj. In the project I am not
+    only learned JavaCC, and also how clear code improve program efficient!

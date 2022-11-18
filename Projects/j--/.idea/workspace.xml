@@ -5,233 +5,265 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project4/BasicTypes.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/BasicTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/BreakStatement.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/BreakStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ConditionalExpression.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ConditionalExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ContinueStatement.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ContinueStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/DoStatement.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/DoStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/DoubleLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/DoubleLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ExceptionHandlers.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ExceptionHandlers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ForStatement.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/ForStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/IntLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/IntLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Interface.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Keywords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Keywords.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/LongLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/LongLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/MalformedLiterals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/MalformedLiterals.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/MultiLineComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/MultiLineComment.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Operators1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Operators1.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Operators2.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/Operators2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/SwitchStatement.ast" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/SwitchStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/project4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project4/report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Introduction-to-compiler-construction-in-a-java.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Introduction-to-compiler-construction-in-a-java.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project4/InterfaceCheck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/BasicTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/BreakStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/ConditionalExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/ContinueStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/DoStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/ExceptionHandlers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/ForStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/Literals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/MultiLineComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/SwitchStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/project5.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5/report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/j--.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/j--.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/AmbiguousName 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/ArrayTypeName 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/ByteClassLoader 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLAnnotation 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLAnnotationDefaultAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLArithmeticInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLArrayInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLAttributeInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLBitInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLBranchStack 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLBranchTarget 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/AmbiguousName 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/ArrayTypeName 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Boxing 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/ByteClassLoader 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLAttributeInfo 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLCPInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLCodeAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLComparisonInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantClassInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantDoubleInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantFieldRefInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantFloatInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantIntegerInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantInterfaceMethodRefInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantLongInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantMemberRefInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantMethodRefInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantNameAndTypeInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantStringInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantUtf8Info 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantValueAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstants 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstants$Category 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConversionInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLDeprecatedAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLElementValue 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLElementValuePair 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLEmitter$1 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantPool 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstantValueAttribute 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstants 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLConstants$Category 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLEmitter 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLEmitter$1 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLEnclosingMethodAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLExceptionInfo 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLException 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLExceptionsAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLFieldInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLFieldInstruction 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLFieldInfo 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLFile 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLFlowControlInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInnerClassInfo 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInnerClassInfo 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInnerClassesAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInputStream 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInsInfo 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLInstruction 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLineNumberInfo 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLineNumberTableAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLoadStoreInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLocalVariableInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLocalVariableTableAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLocalVariableTypeInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLLocalVariableTypeTableAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMemberInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMethodInfo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMethodInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMiscInstruction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLObjectInstruction 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMemberInfo 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLMethodInfo 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLOutputStream 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLParameterAnnotationInfo 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLPath 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLRuntimeInvisibleAnnotationsAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLRuntimeInvisibleParameterAnnotationsAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLRuntimeVisibleAnnotationsAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLRuntimeVisibleParameterAnnotationsAttribute 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLSignatureAttribute 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLSourceDebugExtensionAttribute 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLSourceFileAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CLStackInstruction 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CLSyntheticAttribute 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CharReader 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/CharReader 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/CharReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/CharReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/CharReader 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/ClassContext 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/CompilationUnitContext 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/Constructor 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Context 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Context 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Conversions 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Converter 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/Field 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/I2C 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/IDefn 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JARightShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAST 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Identity 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/InstructionType 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftAssignOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JALeftShiftOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JARightShiftAssignOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAST 3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JAndOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAndOp 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JArrayExpression 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JArrayInitializer 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAssignment 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBinaryExpression 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBlock 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBooleanBinaryExpression 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComplementOp 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JComplementOp 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JComplementOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JAssignment 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBlock 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBooleanBinaryExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JBreakStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JCastOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JCastOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JClassDeclaration 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JClassDeclaration 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComparisonExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JCompilationUnit 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JComplementOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JConditionalExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JConstructorDeclaration 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JConstructorDeclaration 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JContinueStatement 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivideOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JDivideOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JEqualOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JExpression 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp 3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLhs 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralDouble 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLiteralDouble 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralLong 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JLiteralLong 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLogicalAndOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDivideOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JDoStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JEmptyStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JEqualOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JExpression 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JFieldDeclaration 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JFieldDeclaration 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JFieldSelection 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JFieldSelection 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JForStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JFormalParameter 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JGreaterEqualOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JGreaterThanOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JIfStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JInstanceOfOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JInstanceOfOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JInterfaceDeclaration 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JInterfaceDeclaration 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftAssignOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLRightShiftOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLessEqualOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLessThanOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLhs 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralBoolean 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralChar 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralDouble 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralInt 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralLong 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralNull 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLiteralString 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLogicalNotOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JLogicalOrOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMember 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMessageExpression 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMessageExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMethodDeclaration 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMethodDeclaration 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JMinusAssignOp 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JMultiplyOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JMultiplyOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JMultiplyOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrAssignOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNegateOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNewArrayOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNewArrayOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNewOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNewOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JNotEqualOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrAssignOp 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JOrOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JPlusAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPlusOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPlusOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPlusOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostDecrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPostDecrementOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreIncrementOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JPreIncrementOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemAssignOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPlusOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostDecrementOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPostIncrementOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreDecrementOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JPreIncrementOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemAssignOp 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemainderOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JRemainderOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStarAssignOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStatement 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSubtractOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSubtractOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JSubtractOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorAssignOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JReturnStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStarAssignOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStatement 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStatementExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStringConcatenationOp 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JStringConcatenationOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSubtractOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSuper 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSuperConstruction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JSwitchStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JThis 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JThisConstruction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JThrowStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JTryStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JTypeDecl 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JUnaryExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JUnaryPlusOp 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JVariable 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JVariableDeclaration 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JVariableDeclarator 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JWhileStatement 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JWildExpression 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorAssignOp 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorOp 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JXorOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCMain 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCMain 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager 2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCMain 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$JJCalls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser$LookaheadSuccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParserConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/JavaCCParserTokenManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/LocalContext 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/LocalVariableDefn 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/LookaheadScanner 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Main 4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/Member 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/Method 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/jminusminus/MethodContext 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRALoad 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRAStore 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRLoadLocal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRLocal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRNewArray 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRPhiFunction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRALoad 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRAStore 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRArithmetic 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRConditionalJump 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRGetField 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRGoto 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRIntConstant 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRInvoke 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRLoad 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRLoadLocal 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRMove 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRNewArray 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRPhiFunction 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRPutField 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRReturn 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRStore 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRStringConstant 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLinearRegisterAllocator 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NNaiveRegisterAllocator 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/NVirtualRegister 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/SPIM 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Scanner 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Scanner 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/Scanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind 2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind 2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/jminusminus/TokenKind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenMgrError 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/Type 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TypeName 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/jminusminus/TypeNameDefn 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NBasicBlock 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NControlFlowGraph 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NEmitter 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NGraphRegisterAllocator 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRALoad 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRAStore 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRArithmetic 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRConditionalJump 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRGetField 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRGoto 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRInstruction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRIntConstant 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRInvoke 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRLoadLocal 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRLocal 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRNewArray 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRPhiFunction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRPutField 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRReturn 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NHIRStringConstant 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NInterval 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRALoad 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRAStore 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRArithmetic 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRConditionalJump 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRGetField 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRGoto 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRInstruction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRIntConstant 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRInvoke 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRLoad 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRLoadLocal 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRMove 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRNewArray 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRPhiFunction 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRPutField 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRReturn 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRStore 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLIRStringConstant 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NLinearRegisterAllocator 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NNaiveRegisterAllocator 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NPhysicalRegister 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NRange 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NRegister 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NRegisterAllocator 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NTuple 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NVirtualRegister 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/NarrowReference 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/OffsetFrom 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/ParseException 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Parser 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/PrettyPrinter 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/SPIM 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Scanner 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/SimpleCharStream 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/SwitchStatementGroup 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Token 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenInfo 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenKind 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/TokenMgrError 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/Type 3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/jminusminus/UnBoxing 4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project4/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project4/report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JCastOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JCastOp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JLiteralLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JLiteralLong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/JMethodDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JMethodDeclaration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/JavaCCParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JavaCCParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/JavaCCParserConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JavaCCParserConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/JavaCCParserTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/JavaCCParserTokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jminusminus/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jminusminus/j--.jj" beforeDir="false" afterPath="$PROJECT_DIR$/src/jminusminus/j--.jj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,7 +327,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.textmate.bundles&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -512,6 +544,12 @@
       <workItem from="1666483687306" duration="36784000" />
       <workItem from="1667853589499" duration="72000" />
       <workItem from="1667853668672" duration="1673000" />
+      <workItem from="1667873541905" duration="638000" />
+      <workItem from="1667874683035" duration="6812000" />
+      <workItem from="1667973298980" duration="4780000" />
+      <workItem from="1667997410326" duration="8708000" />
+      <workItem from="1668020104445" duration="13759000" />
+      <workItem from="1668537512369" duration="11270000" />
     </task>
     <servers />
   </component>

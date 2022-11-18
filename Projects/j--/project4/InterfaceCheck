@@ -1,0 +1,284 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<15>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Part I (Additions to JavaCC Scanner)
+
+   Problem 1 (Multiline Comment)
+      Approach:
+
+      I had some initial confusion over what the ~ character was doing in.
+      I checked out the documentation for javacc from:
+      https://javacc.github.io/javacc/documentation/grammar.html
+      After studying the grammar for single line comments I realized that it
+      was just simply a not operator, e.g.: "/*" { ~( "*/" ) } "*/"
+      The regular expression for a multi line comment included any
+      characters that was not "*/" in between a pair of "/*" and "*/".
+
+      I followed the code for single line comment to implement multiline
+      similarly, entering into a multi line comment state after scanning a
+      "/*", skipping all chars, then exiting back into the default state after
+      scanning in a "*/".
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 2 (Operators)
+      Approach:
+
+      I added support for the 25 additional operators by listing them in the
+      operator tokens section of j--.jj in the proper format.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 3 (Reserved Words)
+      Approach:
+
+      I added support for the 16 additional reserved words by listing them in
+      the reserved words tokens section of j--.jj in the proper format.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 4 (Literals)
+      Approach:
+
+      I followed the lexical grammar for Java to add additional literal
+      tokens to j--.jj. New private tokens such as DIGITS, EXPONENT, and
+      SUFFIX were added as well. To implement optional tokens such as
+      [ <EXPONENT> ], I used ( <EXPONENT> )?.
+
+      Issues and resolution:
+
+      I had a mess of incorrect lines that after a while I realized was due
+      to a typo on the "e" and "E" scan. I originally had it as " e " and
+      " E ".
+
+   Part II (Additions to JavaCC Parser)
+
+   Problem 5 (Long and Double Basic Types)
+      Approach:
+
+      I added LONG and DOUBLE support to literal() method and basicType()
+      method, following the structure of how INT, BOOLEAN, and CHAR were
+      implemented.
+
+      Issues and resolution:
+
+      I failed the test cases for BasicTypes but I think this is due to not
+      having '/' yet implemented in j--.jj.
+
+   Problem 6 (Operators)
+      Approach:
+
+      I pulled up my Parser.java file and went down the file cross-referencing
+      it with j--.jj to figure out which places needed to be edited and which
+      new methods needed to be added to j--.jj. Instead of a chain of if-else
+      statements, the "|" was used to decide between possible operators in the
+      parse and return statement. Instead of having to use a while loop, I
+      could use the kleene star operator "()*" for parsing multiple
+      arguments. "[]" brackets were usable in parsing optional arguments.
+
+      Issues and resolution:
+
+      I had a couple of errors where some "x" was found where some other token
+      was expected; those were just errors in not updating the correct tokens
+      to parse (e.g. <LAND> instead of <OR>).
+
+   Problem 7 (Conditional Expression)
+      Approach:
+
+      The first first block declares and initializes local variables line, lhs,
+      thenExpression, and elseExpression. The optional argument is placed into
+      a set of brackets. I look for a QUESTION token then parse an expression()
+      followed by a COLON token then conditionalExpression(). lhs is assigned
+      to a new JConditionalExpression() and this gets returned at the end of
+      conditionalExpression().
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 8 (Do Statement)
+      Approach:
+
+      I added an alternate parse for <DO> into statement(). I was careful to
+      pass the right argument types into creating the new JDoStatement()
+      object.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 9 (For Statement)
+      Approach:
+
+      I started by coding out the section in statement(), building out the
+      FOR regular expression with required PAREN and SEMI tokens. Additional
+      local variables were added to the first block for the required parameters
+      of the JForStatement(). For forInit(), I pulled code from
+      localVariableDeclarationStatement() to build out the
+      "type variableDeclarators" portion of the forInit grammar. Local
+      variables were initialized for the various arrays and statements. I used
+      LOOKAHEAD() to check for a type to decide to parse the
+      "type variableDeclarators" portion. The "statement { COMMA
+      statementExpression }" portion parsed a single statementExpression() then
+      an arbitrary amount more for every COMMA token. forUpdate() was done
+      similarly to how the "statement { COMMA statementExpression }" portion
+      of the forInit grammar was done.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 10 (Break Statement)
+      Approach:
+
+      If a BREAK token is parsed in, I store the line number, parse a SEMI
+      token, and assign statement to a new JBreakStatement().
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 11 (Continue Statement)
+      Approach:
+
+      This was done similarly to the break statement.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 12 (Switch Statement)
+      Approach:
+
+      I started with coding out the statement() section, building out the SWITCH
+      regular expression with required LCURLY and RCURLY tokens, returning
+      a JSwitchStatement() at the end with parameters line, JExpression from
+      the parExpression(), and an ArrayList<SwitchStatementGroup> from
+      adding the zero or more occurrences of switchBlockStatementGroup().
+      To handle zero or more occurrences, "()*" was used. switchLabel()
+      returned either a JExpression or null depending on whether a CASE or
+      DEFLT token was found. switchBlockStatementGroup() returned a
+      SwitchStatementGroup that consisted of an ArrayList of the switch labels
+      and block statements. Again, "()*" was used to handle zero or more
+      occurrences of switchLabel and blockStatement; at least one switchLabel
+      was required so I was sure to parse at least one occurrence.
+
+      Issues and resolution:
+
+      I had a bunch of null pointer exceptions; reading the errors
+      in the compiled JavaCCParser.java I realized it was from initializing
+      arraylists but assigning them to null. I needed to initialize empty list,
+      not null lists. This fixed those issues and everything compiled and
+      generated the AST successfully.
+
+   Problem 13 (Exception Handlers)
+      Approach:
+
+      THROW was a simple implementation; I'm looking for THROW and SEMI tokens
+      around a single expression and return a JThrowStatement. Parsing TRY
+      involved first parsing the required block then zero or more "()*"
+      occurrences of CATCH blocks; each parameter and catchBlock were added
+      to their respective ArrayList. The finally block was implemented with
+      brackets "[]" to implement zero or one occurrence. Code was added to
+      the memberDecl() to implement the THROWS statement, parsing potential
+      qualifiedIdentifiers. An ArrayList<TypeName>() was instantiated to add
+      the qualifiedIdentifiers to.
+
+      Issues and resolution:
+
+      I had no issues here.
+
+   Problem 14 (Interface Type Declaration)
+      Approach:
+
+      interfaceMemberDecl() was very similar in structure to memberDecl().
+      The first parse option of IDENTIFIER formalParameters was dropped and
+      possibility of a block statement in the JMethodDeclaration() of the
+      inerfaceMemberDecl() was removed. interfaceBody() is identical in
+      structure to classBody() so I swapped out memberDecl() for
+      interfaceMemberDecl(). The same procedure was done for
+      interfaceDeclaration() from classDeclaration(), swapping classBody() for
+      interfaceBody(), CLASS token for INTERFACE token, and IMPLEMENTS token
+      to the EXTENDS token.
+
+      Issues and resolution:
+
+      typeDeclaration() is where I ran into a couple issues. First I had
+      this error:
+
+      project4/Interface.java:6: error: "class" found where one of
+          "abstract"...
+          "private"...
+          "protected"...
+          "public"...
+          "static"... sought
+
+      I was improperly using LOOKAHEAD()--I didn't need to use it at all.
+      I next ran into this error:
+
+      luke@luke-elementaryos-desktop:~/workspace/j--$ bash ./bin/javaccj-- -p
+      project4/Interface.java | diff -u - project4/Interface.ast
+      --- -   2021-03-25 17:26:50.496064183 -0400
+      +++ project4/Interface.ast      2021-02-04 11:20:20.000000000 -0500
+      @@ -5,6 +5,7 @@
+               "imports": ["java.lang.Integer", "java.lang.System"],
+               "JInterfaceDeclaration:4":
+               {
+      +            "modifiers": [],
+                   "name": "Factorial",
+                   "super": "java.lang.Object",
+                   "JMethodDeclaration:5":
+
+      My code was missing that line ""modifiers": [],". I was able to narrow
+      this down to some kind of issue in typeDeclaration(). "mods" was being
+      passed as "null" to the interfaceDeclaration() which is why it wasn't
+      adding that empty list of modifiers. Originally I had my code written
+      as such. The syntax was incorrect and as a result modifiers() was not
+      being called if the interfaceDeclaration() was parsed.
+
+              mods = modifiers()
+              (
+                  classDeclaration = classDeclaration(mods)
+              ) |
+              (
+                  classDeclaration = interfaceDeclaration(mods)
+              )
+
+      The code was fixed to the following:
+
+              mods = modifiers()
+              (
+                  classDeclaration = classDeclaration(mods) |
+                  classDeclaration = interfaceDeclaration(mods)
+              )
+
+
+4. Did you receive help from anyone? List their names, status (classmate,
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   ...

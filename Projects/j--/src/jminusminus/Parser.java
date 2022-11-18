@@ -84,7 +84,7 @@ public class Parser {
      * Parses and returns a qualified identifier.
      *
      * <pre>
-     *   qualifiedIdentifier ::= IDENTIFIER { DOT IDENTIFIER }
+     *   qualifiedIdentifier ::= IDENTIFIER { DOT IDENTIFIER }∂
      * </pre>
      *
      * @return a qualified identifier.
