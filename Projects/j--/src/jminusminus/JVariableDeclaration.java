@@ -37,6 +37,10 @@ class JVariableDeclaration extends JStatement {
             int offset = ((LocalContext) context).nextOffset();
             LocalVariableDefn defn = new LocalVariableDefn(decl.type().resolve(context), offset);
 
+            if (decl.type().resolve(context) == Type.DOUBLE || decl.type().resolve(context) == Type.LONG) {
+                ((LocalContext) context).nextOffset();
+            }
+
             // First, check for shadowing.
             IDefn previousDefn = context.lookup(decl.name());
             if (previousDefn != null && previousDefn instanceof LocalVariableDefn) {

@@ -108,6 +108,7 @@ class Conversions {
         put(Type.LONG, Type.BOXED_LONG, new Boxing(Type.LONG, Type.BOXED_LONG));
         put(Type.DOUBLE, Type.BOXED_DOUBLE, new Boxing(Type.DOUBLE, Type.BOXED_DOUBLE));
 
+
         // Un-boxing.
         put(Type.BOXED_CHAR, Type.CHAR, new UnBoxing(Type.BOXED_CHAR, Type.CHAR, "charValue"));
         put(Type.BOXED_INT, Type.INT, new UnBoxing(Type.BOXED_INT, Type.INT, "intValue"));
@@ -271,6 +272,9 @@ class I2C implements Converter {
     }
 }
 
+/**
+ * An int to long converter.
+ */
 class I2L implements Converter {
     /**
      * {@inheritDoc}
@@ -280,30 +284,61 @@ class I2L implements Converter {
     }
 }
 
+/**
+ * An int to double converter.
+ */
 class I2D implements Converter {
+    /**
+     * {@inheritDoc}
+     */
     public void codegen(CLEmitter output) {
         output.addNoArgInstruction(I2D);
     }
 }
 
+/**
+ * A long to double converter.
+ */
 class L2D implements Converter {
+    /**
+     * {@inheritDoc}
+     */
     public void codegen(CLEmitter output) {
         output.addNoArgInstruction(L2D);
     }
 }
+
+/**
+ * A long to int converter.
+ */
 class L2I implements Converter {
+    /**
+     * {@inheritDoc}
+     */
     public void codegen(CLEmitter output) {
         output.addNoArgInstruction(L2I);
     }
 }
 
+/**
+ * A double to int converter.
+ */
 class D2I implements Converter {
+    /**
+     * {@inheritDoc}
+     */
     public void codegen(CLEmitter output) {
         output.addNoArgInstruction(D2I);
     }
 }
 
+/**
+ * An double to long converter.
+ */
 class D2L implements Converter {
+    /**
+     * {@inheritDoc}
+     */
     public void codegen(CLEmitter output) {
         output.addNoArgInstruction(D2L);
     }

@@ -142,6 +142,11 @@ class JMethodDeclaration extends JAST implements JMember {
         // method call.
         for (JFormalParameter param : params) {
             LocalVariableDefn defn = new LocalVariableDefn(param.type(), this.context.nextOffset());
+
+            if (param.type() == Type.DOUBLE || param.type() == Type.LONG) {
+                this.context.nextOffset();
+            }
+
             defn.initialize();
             this.context.addEntry(param.line(), param.name(), defn);
         }
@@ -163,13 +168,15 @@ class JMethodDeclaration extends JAST implements JMember {
         partial.addMethod(mods, name, descriptor, null, false);
         if (returnType == Type.VOID) {
             partial.addNoArgInstruction(RETURN);
-        } else if (returnType == Type.INT || returnType == Type.BOOLEAN ||
-                returnType == Type.CHAR) {
+        } else if (returnType == Type.INT || returnType == Type.BOOLEAN || returnType == Type.CHAR) {
             partial.addNoArgInstruction(ICONST_0);
             partial.addNoArgInstruction(IRETURN);
         } else if (returnType == Type.LONG) {
+            partial.addNoArgInstruction(LCONST_0);
+            partial.addNoArgInstruction(LRETURN);
+        } else if (returnType == Type.DOUBLE) {
             partial.addNoArgInstruction(DCONST_0);
-            partial.
+            partial.addNoArgInstruction(DRETURN);
         } else {
             partial.addNoArgInstruction(ACONST_NULL);
             partial.addNoArgInstruction(ARETURN);
