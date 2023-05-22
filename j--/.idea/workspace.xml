@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="1WioJqpDF6mSNoLN7qdMmxO1tU5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chengtao/Desktop/CS451-spring23/j--&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/jvm" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="JArrayExpression" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Scan">
+    <configuration name="Analyze" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-a $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Compile" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCAnalyze" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-a $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCCompile" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="$Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCParse" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-p $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCPreAnalyze" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-pa $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCSPIM" type="Application" factoryName="Application">
+      <envs>
+        <env name="j" value="$PROJECT_DIR$/.." />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-s $Prompt$ -r $Prompt$ $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaCCScan" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.JavaCCMain" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-t $Prompt$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jminusminus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Parse" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-p $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreAnalyze" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-pa $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SPIM" type="Application" factoryName="Application">
+      <envs>
+        <env name="j" value="$PROJECT_DIR$/.." />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-s $Prompt$ -r $Prompt$ $Prompt$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scan" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jminusminus.Main" />
+      <module name="j--" />
+      <option name="PROGRAM_PARAMETERS" value="-t $Prompt$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jminusminus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Analyze" />
+      <item itemvalue="Application.Compile" />
+      <item itemvalue="Application.JavaCCAnalyze" />
+      <item itemvalue="Application.JavaCCCompile" />
+      <item itemvalue="Application.JavaCCParse" />
+      <item itemvalue="Application.JavaCCPreAnalyze" />
+      <item itemvalue="Application.JavaCCSPIM" />
+      <item itemvalue="Application.JavaCCScan" />
+      <item itemvalue="Application.Parse" />
+      <item itemvalue="Application.PreAnalyze" />
+      <item itemvalue="Application.SPIM" />
+      <item itemvalue="Application.Scan" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="635c3b74-0e24-42bf-a84e-cbc6a9391ff1" name="Default Changelist" comment="" />
+      <created>1579641706788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579641706788</updated>
+      <workItem from="1675831928205" duration="2897000" />
+      <workItem from="1675917523323" duration="6774000" />
+      <workItem from="1675998453129" duration="1330000" />
+      <workItem from="1676270456431" duration="1521000" />
+      <workItem from="1676583956939" duration="642000" />
+      <workItem from="1676838792277" duration="33000" />
+      <workItem from="1677117484700" duration="26799000" />
+      <workItem from="1677208908871" duration="2404000" />
+      <workItem from="1677609797574" duration="9189000" />
+      <workItem from="1677719517445" duration="4408000" />
+      <workItem from="1677734067304" duration="8909000" />
+      <workItem from="1678385774714" duration="2686000" />
+      <workItem from="1678388472571" duration="10576000" />
+      <workItem from="1678492985945" duration="5774000" />
+      <workItem from="1678585477217" duration="1402000" />
+      <workItem from="1678587084891" duration="4486000" />
+      <workItem from="1678598023877" duration="4211000" />
+      <workItem from="1678809205611" duration="9819000" />
+      <workItem from="1680621327627" duration="493000" />
+      <workItem from="1680621829407" duration="20000" />
+      <workItem from="1680621986528" duration="7480000" />
+      <workItem from="1681321169553" duration="2493000" />
+      <workItem from="1681682031003" duration="6802000" />
+      <workItem from="1681688982656" duration="1359000" />
+      <workItem from="1681690405942" duration="25901000" />
+      <workItem from="1681829350716" duration="1102000" />
+      <workItem from="1681830886785" duration="20000" />
+      <workItem from="1681831247181" duration="104000" />
+      <workItem from="1681846766485" duration="14000" />
+      <workItem from="1681862198210" duration="1606000" />
+      <workItem from="1681874745112" duration="1360000" />
+      <workItem from="1681876465021" duration="5000" />
+      <workItem from="1681876768530" duration="3120000" />
+      <workItem from="1682452772936" duration="211000" />
+      <workItem from="1682452998057" duration="93000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jj" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+</project>

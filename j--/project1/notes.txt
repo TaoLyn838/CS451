@@ -1,0 +1,26 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<< 5 >>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 2 >>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+4. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Line number of implementing code: Scanner: line#: 100, 139-220. Parser: line#: 655-946. TokenInfo: line#: 24-26
+
+   Because I had done this project before (I withdrew from this course), I did not feel hard to get into this project.
+   But, I understood this project better this time, and I improved my code. For example, I rename my tokens in the
+   TokenInfo file using those names that I read from "Grammars for j-- and Java" and follow grammar rules for
+   implementing operators and comments.

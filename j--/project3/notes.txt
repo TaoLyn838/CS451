@@ -1,0 +1,51 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<30>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS451/651 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   Swami Iyer         Instructor   When I followed J-- grammar to write the forInit() method, I encountered
+                                     two different return types: ArrayList<JVariableDeclarator> and
+                                     ArrayList<JStatement>. Professor Swami pointed out that I could add
+                                     JVariableDeclaration as an element into ArrayList<JStatement>, and
+                                     showed me an example using localVariableDeclarationStatement(). I realized
+                                     that JVariableDeclaration extends JStatement, which means it's an acceptable
+                                     type for the JStatement ArrayList.
+
+
+
+
+4. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Even through this project claimed ten questions in total, but the
+    real work in this project is more than ten.
+
+    classDeclaration() | line# 202-215
+    interfaceBody() | line# 269-278
+    memberDecl() | line# 296-336
+    interfaceMemberDecl() | line# 350-405
+    statement() | line# 467-574
+    forInit() | line# 641-659
+    forUpdate() | line# 669-676
+    switchBlockStatementGroup() | line# 688-703
+    switchLabel() | line# 716-729
+    basicType() | line# 874-889
+    statementExpression() | line# 929-950
+    assignmentExpression() | line# 976-1007
+    relationalExpression() | line# 1184-1202
+    postfixExpression() | line# 1350-1367
+    literal() | line# 1542-1566
+    handleQualifiedIdentifier() | line# 1570-1593
+    seeBasicType() | line# 1746-1749
+    seeReferenceType() | line# 1752-1767
